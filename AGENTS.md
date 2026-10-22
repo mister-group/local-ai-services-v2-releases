@@ -20,12 +20,4 @@
 ## Optional project-local worktrees
 
 Load the shared project-context skill and resolve this repository in the shared
-projects.json registry. Work directly in the registered canonical checkout by
-default. Do not create or reuse a worktree merely because work is development,
-delegated or project-bound. Use projectctl under the registered canonical root's
-.worktrees/ only when the user explicitly requests a worktree in the current
-task; then keep owner/task/session evidence and use its preservation checks.
-If direct work would overlap another writer, report the conflict for a user
-decision rather than creating isolation automatically. Read this file and
-applicable nested instructions explicitly. Guidance is not a sandbox and grants
-no new permission; existing roles and task approvals still apply.
+projects.json registry. Hermes agents working from a Telegram/chat request: use projectctl under the registered canonical root's .worktrees/ only when the user explicitly requests a worktree in the current task. Claude Code / Codex sessions and their subagents may create and use their own `projectctl worktree` without asking (owner 2026-10-22 21:29-21:33). Use one whenever the canonical checkout is a live checkout or another writer works there. Keep owner/task/session evidence and use projectctl's preservation checks. Never raw `git worktree`. If direct work would overlap another writer, report the conflict for a user decision rather than creating isolation automatically. Read this file and applicable nested instructions explicitly. Guidance is not a sandbox and grants no new permission; existing roles and task approvals still apply.
