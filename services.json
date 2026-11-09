@@ -1,6 +1,0 @@
-{
-  "schema_version": 2,
-  "project_id": "local-ai-services-releases",
-  "notes": "Pouze distribuční repozitář GitHub Release installerů. Nemá vlastní server; runtime vlastní local-ai-services.",
-  "services": []
-}
